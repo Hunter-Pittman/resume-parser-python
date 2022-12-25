@@ -62,6 +62,6 @@ if __name__ == '__main__':
     analyzed_resumes = search_pdf(args.pdf_path, keywords)
 
     
-    d = datetime.datetime.now()
+    d = time.time()
 
-    generate_csv(analyzed_resumes, keywords, args.output_csv + d + "parsed_resume.csv")
+    generate_csv(analyzed_resumes, keywords, args.output_csv + str(d) + "parsed_resume.csv")
