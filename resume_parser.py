@@ -1,7 +1,7 @@
 import os
 import argparse
 import csv
-import PyPDF2
+import pypdf
 import time, datetime
 
 class Resume:
@@ -16,10 +16,10 @@ def search_pdf(pdf_path, keywords):
             count = []
             filename = os.path.join(pdf_path, file)
             with open(filename, 'rb') as f:
-                pdf_reader = PyPDF2.PdfFileReader(f)
+                pdf_reader = pypdf.PdfReader(f)
                 pdf_text = ""
                 for page in pdf_reader.pages:
-                    pdf_text += page.extractText()
+                    pdf_text += page.extract_text()
             for keyword in keywords:
                 count.append(pdf_text.lower().count(keyword.lower()))
             analyzed_resumes.append(Resume(filename, count))
