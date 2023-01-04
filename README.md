@@ -29,7 +29,7 @@ Execution on Mac OSX:
 -Run the search.
 > (if necessary) cd /Users/rdpittm1/Library/Python/3.10/bin
 
-> python3 resume_parser.py -p <path to PDF directory> -k <path to keywords file> -o <path to output directory>
+> python3 resume_parser.py -p path to PDF directory -k path to keywords file -o path to output directory
 
 > Example: python3 resume_parser.py -p ./resumes -k ./my_keywords.txt -o search_output
 
