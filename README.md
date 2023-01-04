@@ -35,6 +35,7 @@ Execution on Mac OSX:
 
 -Results
 --Script output will be a .CSV file prepended with the name of the specified output directory, include a numerical sequence, and end with "parsed_resume.csv"
+
 --Example: search_output1672251559.294723parsed_resume.csv
 
 
